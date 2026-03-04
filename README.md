@@ -4,7 +4,7 @@ A clean and intuitive task management application built with **React** and **Red
 
 ## 🔗 Live Demo
 
-_Link to deployed app (e.g. Vercel / Netlify)_
+_https://hales-task-planner.vercel.app/_
 
 ## 📸 Screenshots
 
@@ -79,7 +79,7 @@ Forms are managed with **Formik** and validated with **Yup**. Required field enf
 1. Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/halenurgurel/task-planner.git
 cd task-planner
 ```
 
