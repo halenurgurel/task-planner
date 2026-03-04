@@ -1,7 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { updateTask } from "../redux/tasks/operations";
+import { updateTask } from "../redux/tasks/slice";
 import { selectAllTasks } from "../redux/tasks/selectors";
 import { CATEGORIES } from "../constants/categories";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -66,7 +66,7 @@ const EditTask = () => {
         {({ setFieldValue, values }) => (
           <Form
             autoComplete="off"
-            className="flex max-w-200 flex-col gap-4 rounded-xl bg-white p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
+            className="flex max-w-200 flex-col gap-4 p-6"
           >
             <header className="flex items-center justify-between gap-15">
               <button

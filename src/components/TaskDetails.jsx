@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { selectAllTasks } from "../redux/tasks/selectors";
-import { deleteTask } from "../redux/tasks/operations";
+import { deleteTask } from "../redux/tasks/slice";
 import { CATEGORIES } from "../constants/categories";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
@@ -27,7 +27,7 @@ const TaskDetails = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex w-full max-w-100 flex-col gap-4 rounded-xl bg-white p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+      <div className="flex w-full max-w-100 flex-col gap-4 p-6">
         <header className="flex items-center justify-between">
           <button
             type="button"
